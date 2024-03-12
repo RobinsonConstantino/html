@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="7-favicon.ico" type="image/x-icon" />
+    <title>Links</title>
+    <style>
+      body {
+        font-family: calibri, sans-serif;
+      }
+
+      a {
+        color: tomato;
+        text-decoration: none; /* para tirar sublinhado */
+        /*font-weight: 100;*/ /* para colocar ou não negrito */
+      }
+
+      li {
+        font-size: 1.25em;
+      }
+
+      a:visited {
+        color: blue;
+      }
+
+      a:active {
+        color: yellowgreen;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: tomato;
+      }
+
+      /* :: = pseudo-elemento */
+      a::after {
+        content: " ➙";
+        color: purple;
+        font-weight: normal;
+        text-decoration: none;
+      }
+
+      a::before {
+        content: "➙ ";
+      }
+
+      .especial::before {
+        content: "Acesse o link ➙";
+        color: blue;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li>
+        <a
+          href="https://youtu.be/EugXNMza5pw?si=TmUH5Bh9yPXqmbGp"
+          target="_blank"
+          >Kim Kataguiri</a
+        >
+      </li>
+      <li>
+        <a href="https://www.youtube.com/live/RgR5kAGpu2Q?si=Loor1n8RmmD8Kx4L"
+          >Sem Espuma - Carlos Andreazza</a
+        >
+      </li>
+      <li>
+        <a href="https://www.ferrari.com/en-BR" class="especial">Ferrari</a>
+      </li>
+    </ul>
+  </body>
+
+  <!-- Seletores Personalizados
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+  -->
+</html>

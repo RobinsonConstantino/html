@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* em HTML é id = em CSS é # */
+/* em HTML é class = em CSS é . */
+
+body {
+  background-color: #ff6347;
+  color: #4f160c;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify;
+}
+
+h1 {
+  color: #4f160c;
+}
+
+h1#principal  /*ou #principal*/ {
+  text-align: center;
+  /*background-color: #a12d18;*/
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  text-indent: 2em;
+}
+
+.basico {
+  background-color: blue;
+}
+
+.intermediario {
+  background-color: aqua;
+  color: blue;
+}
+
+.avancado {
+  background-color: black;
+}
+
+.destaque {
+  color: #ff6347;
+  background-color: black;
+}
+
+/* usar id apenas 1 vez */
+/* usar class pode ser usada quantas vezes forem necessárias */
+/* as configurações do id se sobrepõem às configurações da class*/
+/* não pode haver mais de 1 mesmo id no mesmo html. mas pode haver o mesmo id em diferentes htmls*/

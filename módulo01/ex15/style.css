@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+  background-color: lightblue;
+  font-family: calibri light, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05cm;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: lightcoral;
+}
+p {
+  text-align: justify;
+}

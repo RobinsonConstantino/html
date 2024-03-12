@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos em HTML 5</title>
+  </head>
+  <body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video
+      src="midia/video-ferrari-1080.mp4"
+      width="500"
+      height="500"
+      poster="imagens/ferrari-1.jpg"
+      controls
+    ></video>
+    <hr />
+    <p>Outros formatos de vídeo podem ser: m4v, webm e ogv.</p>
+    <hr />
+    <video
+      controls
+      loop
+      width="500"
+      height="500"
+      poster="imagens/ferrari-2.jpg"
+    >
+      <source src="midia/video-ferrari-360.mp4" type="video/mp4" />
+      <source src="midia/video-ferrari-1080.mp4" type="video/mp4" />
+      <p>Seu computador não tem compatibilidade com nenhum dos formatos.</p>
+    </video>
+    <p>
+      Usar outras extensões de vídeo caso o navegador não tenha compatibilidade
+      com determinado formato.
+    </p>
+    <hr />
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe
+      width="500"
+      height="315"
+      src="https://www.youtube.com/embed/rK3LpUSijGM?si=1o6rR2dGv8m5r5SF"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

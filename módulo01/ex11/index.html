@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML 5</title>
+    <link rel="shortcut icon" href="imagens/foto-p.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Imagem Dinâmica</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa beatae
+      numquam at optio blanditiis recusandae fugiat voluptatibus aperiam fugit,
+      architecto tenetur quaerat placeat reiciendis excepturi a sed assumenda ea
+      voluptatem.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/foto-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px)"
+        srcset="imagens/foto-m.png"
+        type="image/png"
+      />
+      <img src="imagens/foto-g.png" alt="imagem flexível" />
+    </picture>
+    <hr />
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <audio src="mida/real-2-me-tonex.mp3" controls metadata></audio>
+    <!--Controls podem ser: auto, metadata, loop ou none-->
+    <!--Formatos: MP3, WAV e OGG-->
+    <hr />
+    <audio preload="metadata" controls>
+      <source src="mida/real-2-me-tonex.mp3" type="audio/mpeg" />
+      <source src="mida/real-2-me-tonex.mp3" type="audio/mpeg" />
+      <source src="mida/real-2-me-tonex.mp3" type="audio/mpeg" />
+    </audio>
+    <hr />
+    <p>
+      Se o navegador não conseguir reproduzir o áudio,
+      <a href="mida/real-2-me-tonex.mp3"> clique aqui para baixar o MP3. </a>
+    </p>
+    <p>
+      Nota: Arquivos em formato WAV são muitos pesados. Portanto, evite seu uso.
+      Arquivos com ótima qualidade devem ser disponibilizados somente para
+      download.
+    </p>
+  </body>
+</html>

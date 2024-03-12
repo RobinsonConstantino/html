@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatação de textos</title>
+    <!--Outra forma de usar a tag <mark> para fazer várias mudanças ao mesmo tempo.-->
+    <style>
+      mark {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <!--forma não semântica de destacar texto-->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero
+      neque ab accusantium totam! <b>Esse ipsa a in nisi sunt</b> asperiores
+      quibusdam suscipit illo vero cum possimus nostrum, voluptatibus ut?
+    </p>
+    <p>
+      No destaque em negrito do texto acima foi utilizada a Tag &lt; b &gt; de
+      forma não semântica. Isso significa que o destaque feito está relacionado
+      somente à forma.
+    </p>
+    <hr />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      <strong> Repudiandae totam quas earum </strong> recusandae eum harum
+      deserunt dolore enim esse dolor sequi eos neque id, officiis
+      exercitationem dignissimos iste culpa a!
+    </p>
+    <p>
+      No texto em negrito destacado acima foi usada a Tag &lt; Strong &gt; de
+      forma Semântica.
+    </p>
+    <hr />
+    <h2>Itálico</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem
+      veniam, error, accusamus minima repellat labore ratione quasi optio
+      dolorem impedit sunt excepturi! <i>Dolore fugiat facilis</i> totam dicta,
+      officiis ipsa.
+    </p>
+    <p>
+      No texto com detalhe em Itálico do parágrafo anterior foi usada a Tag &lt;
+      i &gt; de forma não semântica.
+    </p>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nobis
+      itaque similique officiis nemo assumenda impedit at possimus nisi harum.
+      <em>Nostrum ratione expedita pariatur</em> facere omnis ipsam nam at
+      deleniti.
+    </p>
+    <p>
+      No texto em Itálico acima, foi usada a Tag &lt; em &gt; de forma
+      semântica.
+    </p>
+    <hr />
+    <h2>Resumo</h2>
+    <p>
+      As Tags &lt; b &gt; e &lt; i &gt; estão em desuso no HTML 5. Elas devem
+      ser substituídas pela Tag &lt; strong &gt; e a Tag &lt; em &gt;,
+      respectivamente.
+    </p>
+    <hr />
+    <h2>Marcador de texto / Texto marcado</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore inventore
+      odit eos id fugit nisi qui tenetur sint, accusamus,
+      <mark> ipsa quibusdam laborum assumenda ea </mark>, iure ex dolorum illo
+      alias voluptates!
+    </p>
+    <hr />
+    <p>
+      A marcação do texto acima foi feita com a Tag &lt; mark &gt;. Essa Tag é
+      de forma apenas.
+    </p>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error
+      reiciendis temporibus quos ex ratione tenetur odio ea! Deleniti,
+      <mark style="background-color: rgb(0, 255, 195)"> placeat molestiae </mark
+      >. Nihil sapiente maiores ipsa nostrum consectetur atque aliquam modi!
+    </p>
+    <hr />
+    <p>
+      No texto destacado acima, foi utilizado <strong>ESTILO</strong> dentro da
+      Tag &lt; mark &gt;. Por isso essa Tag passa a ser de
+      <strong>ESTILO</strong> e não de forma.
+    </p>
+    <hr />
+    <h2>Texto Grande e Pequeno</h2>
+    <p>
+      Lorem ipsum dolor, <big>sit amet consectetur adipisicing elit</big>.
+      Soluta quisquam dolor n <small>quidem quo saepe</small>quidem quo saepe,
+      eligendi illum temporibus corporis quas voluptatum, quibusdam facere!
+      Molestias eligendi aliquam id modi.
+    </p>
+    <hr />
+    <p>
+      A Tag &lt; big &gt; está em desuso e trata-se de uma Tag de forma. Já a
+      Tag &lt; small &gt; é uma Tag de sentido e permanece em uso.
+    </p>
+    <hr />
+    <h2>Texto Excluído</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <del> Magnam voluptates saepe, harum alias accusamus quas.</del> Officiis
+      molestias, facilis error officia veritatis amet voluptates cum delectus
+      ipsam illum perspiciatis accusamus assumenda.
+    </p>
+    <hr />
+    <h2>Texto Inserido</h2>
+    <p>
+      <ins>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ins> Ullam
+      dolores, aut eum labore qui magni fugiat blanditiis assumenda sunt soluta
+      velit tempora dicta veritatis quis necessitatibus architecto excepturi
+      temporibus placeat.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <u> Eos molestiae optio corrupti</u> porro doloribus aspernatur explicabo
+      cumque, corporis voluptas, ducimus pariatur consequatur nemo error.
+      Perferendis iusto neque deserunt quibusdam commodi!
+    </p>
+    <p>
+      A Tag &lt; ins &gt; apresentada no primeiro parágrafo é semântica. Já a
+      Tag &lt; u &gt; utilizada no segundo é de forma.
+    </p>
+    <hr />
+    <h2>Texto Sobrescrito</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Por exemplo
+      X<sup>2</sup> ducimus nisi fugiat in voluptatem hic ea eligendi id officia
+      atque! Itaque cum dolorem dolore magnam doloremque <sup>eum</sup> alias
+      sequi nam facere!
+    </p>
+    <hr />
+    <h2>Texto Subscrito</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit por exemplo
+      H<sub>2</sub>O. Eaque aliquam consequatur eius numquam sequi maiores omnis
+      architecto quam minima, quos assumenda. Labore laboriosam, fuga
+      <sub>vel</sub> commodi eius culpa dicta cupiditate?
+    </p>
+  </body>
+</html>

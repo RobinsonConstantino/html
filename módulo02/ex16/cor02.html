@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Gradiente em CSS</title>
+    <style>
+      * {
+        /*configurações globais do CSS é indicado pelo (*) */
+        height: 100%;
+      }
+
+      body {
+        background-image: linear-gradient(
+          to right,
+          rgb(0, 0, 0) 25%,
+          rgb(247, 226, 75),
+          rgb(255, 255, 255)
+        );
+        /*podem ser colocadas quantas cores forem necessárias/desejadas*/
+        /*para inclinar o degradê basta inserir: 45dg ou -45dg por exemplo ou qualquer outra inclinação*/
+        /*outra opção é inserir um gradiente circular: radial-gradient(circle)*/
+
+        /*background-image: linear-gradient(to bottom, black, white);*/
+
+        /*background-attachment: fixed;*/
+        /*serve para evitar faixa de outra cor no rodapé*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: white">Testando Gradiente</h1>
+  </body>
+</html>
