@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: "titulo-h1";
+  src: url("/fontes/roadway-titulo/Roadway.ttf") format(truetype);
+}
+
+/*:root {
+  --fonte1: "calibri", sans-serif;
+  --fonte2: "titulo-h1", "sans-serif";
+  --fonte3: ;
+}*/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -22,6 +33,7 @@ header > h1 {
   padding: 25px;
   font-variant: small-caps; /* todas as letras maiúsculas, mas as primeiras maiores que o resto */
   /*text-transform: uppercase;*/ /*todas as letras do mesmo tamanho maiúsculas*/
+  font-family: "titulo-h1", sans-serif;
 }
 
 header > P {
