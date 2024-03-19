@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "titulo-h1";
-  src: url("/fontes/roadway-titulo/Roadway.ttf") format(truetype);
+  font-family: "titulo";
+  src: url("C:/Users/robin/OneDrive/Área de Trabalho/cursos em vídeo/html/módulo03/d012/correcao-desafio12/fontes/roadway-titulo/Roadway.ttf")
+    format(truetype);
 }
 
-/*:root {
-  --fonte1: "calibri", sans-serif;
-  --fonte2: "titulo-h1", "sans-serif";
-  --fonte3: ;
-}*/
+@font-face {
+  font-family: "corpo";
+  src: url("C:/Users/robin/OneDrive/Área de Trabalho/cursos em vídeo/html/módulo03/d012/correcao-desafio12/fontes/robaga-rounded-corpo2/Robaga\ Rounded\ Light-Italic.otf")
+    format(opentype);
+}
 
 * {
   margin: 0px;
@@ -18,26 +19,53 @@
 
 html,
 body {
+  margin: auto;
   min-height: 100vh;
   background-color: tomato;
   color: white;
+}
+
+div {
+  max-width: 70vw;
+  margin: auto;
+}
+
+body > header > h1 {
+  position: center;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  min-width: 100vw;
 }
 
 header {
   background-color: black;
   color: white;
   text-align: center;
+  position: fixed;
+  max-height: 12vw;
 }
 
 header > h1 {
-  padding: 25px;
-  font-variant: small-caps; /* todas as letras maiúsculas, mas as primeiras maiores que o resto */
-  /*text-transform: uppercase;*/ /*todas as letras do mesmo tamanho maiúsculas*/
-  font-family: "titulo-h1", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  font-family: "titulo";
+  font-size: 8vw;
+  letter-spacing: 0.1em;
+  line-height: 100%;
+  position: relative;
 }
 
-header > P {
-  padding-bottom: 25px;
+/*font-variant: small-caps; /* todas as letras maiúsculas, mas as primeiras maiores que o resto */
+/*text-transform: uppercase;*/ /*todas as letras do mesmo tamanho maiúsculas*/
+
+header > p {
+  padding-bottom: 35px;
+  font-family: "calibri", sans-serif;
+  font-size: 1.3vw;
+  letter-spacing: 0.05em;
+  line-height: 25%;
 }
 
 header a,
@@ -55,25 +83,52 @@ footer a:hover {
 }
 
 section {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  padding-left: 30px;
+  padding-top: 12vh;
+  padding-bottom: 8vh;
   line-height: 2em;
+}
+
+section > p {
+  font-family: "corpo", sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+  padding-bottom: 2em;
 }
 
 section.normal {
   background-color: white;
   color: black;
+  padding: 60px;
+}
+
+section.normal#margem-top {
+  padding-top: 15vw;
 }
 
 section.imagem > p {
-  width: 400px;
-  background-color: rgba(0, 0, 0, 0.53);
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.263);
+  padding: 30px;
+  text-shadow: 1px 1px 0px black;
 }
 
 section.imagem {
-  background-color: rgba(0, 0, 0, 0.381);
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.489);
   color: white;
+  padding: 30px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section#img01 {
+  background-image: url("C:/Users/robin/OneDrive/Área de Trabalho/cursos em vídeo/html/módulo03/d012/correcao-desafio12/imagens/background001.jpg");
+  background-position: right center;
+}
+
+section#img02 {
+  background-image: url("C:/Users/robin/OneDrive/Área de Trabalho/cursos em vídeo/html/módulo03/d012/correcao-desafio12/imagens/background002.jpg");
+  background-position: right center;
 }
 
 footer {
@@ -81,4 +136,7 @@ footer {
   color: white;
   text-align: center;
   padding: 8px;
+  font-family: "calibri", sans-serif;
+  font-size: 1.3vw;
+  letter-spacing: 0.05em;
 }
