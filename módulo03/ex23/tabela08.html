@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Responsivas</title>
+    <style>
+      body {
+        font-family: "calibri", sans-serif;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+      }
+
+      caption {
+        font-size: 1em;
+        font-weight: bolder;
+        padding: 6px;
+      }
+
+      th,
+      td {
+        border: 2px solid tomato;
+        padding: 6px;
+      }
+
+      tbody > tr:nth-child(odd) {
+        background-color: lightgray;
+      }
+
+      div#container {
+        overflow-x: auto; /* pra evitar rolagem lateral quando reduzir tela*/
+      }
+
+      .linha1 {
+        background-color: rgb(53, 53, 53);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+      possimus inventore mollitia quia tempore praesentium magnam dignissimos
+      quam eligendi temporibus neque molestiae, ratione cum delectus dicta
+      aliquid? Dolores, debitis praesentium.
+    </p>
+    <div id="container">
+      <table>
+        <thead>
+          <tr>
+            <th class="linha1">Produto</th>
+            <th class="linha1">Jan</th>
+            <th class="linha1">Fev</th>
+            <th class="linha1">Mar</th>
+            <th class="linha1">Abr</th>
+            <th class="linha1">Mai</th>
+            <th class="linha1">Jun</th>
+            <th class="linha1">Jul</th>
+            <th class="linha1">Ago</th>
+            <th class="linha1">Set</th>
+            <th class="linha1">Out</th>
+            <th class="linha1">Nov</th>
+            <th class="linha1">Dez</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tv Digital</td>
+            <td>3</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Smart Phone Samsung</td>
+            <td>3</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Tablet Redimi</td>
+            <td>3</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>MP3 player Hayloi</td>
+            <td>3</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Fone JBL</td>
+            <td>3</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
