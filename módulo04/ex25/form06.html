@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 06</title>
+    <style>
+      * {
+        font-family: "calibri", sans-serif;
+      }
+
+      div {
+        color: white;
+        font-size: 2em;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <hr />
+    <div>
+      <marquee behavior="" direction="left">
+        <p>
+          Sempre usar método POST na tag FORM para envio de 3.000 bytes ou mais.
+          Sempre usar método POST na tag FORM para envio de 3.000 bytes ou mais.
+        </p>
+      </marquee>
+      <marquee behavior="" direction="right">
+        <p>
+          Sempre usar método POST na tag FORM para envio de 3.000 bytes ou mais.
+          Sempre usar método POST na tag FORM para envio de 3.000 bytes ou mais.
+        </p>
+      </marquee>
+    </div>
+    <hr />
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <p>
+        <label for="icor">Cor: </label>
+        <input type="color" name="cor" id="icor" value="#ff6347" />
+      </p>
+      <hr />
+      <p>
+        <label for="ifoto"></label>
+        <input type="file" name="foto" id="ifoto" />
+      </p>
+      <hr />
+      <p>
+        <label for="inivel">Nível de satisfação: </label>
+        <input type="range" name="nivel" id="inivel" min="0" max="10" />
+      </p>
+      <hr />
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
