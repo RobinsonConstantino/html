@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 07</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário 7</h1>
+    <hr />
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <p>
+        1
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+          <option value="" selected>--Escolha--</option>
+          <optgroup label="Região Sudeste">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+          </optgroup>
+          <optgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <hr />
+      <p>
+        2
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof" />
+        <datalist id="lstprof">
+          <option value="ADM">Administrador</option>
+          <option value="MKT">Marketing</option>
+          <option value="PROF">Professor</option>
+          <option value="DEV">Desenvolvedor</option>
+        </datalist>
+      </p>
+      <hr />
+      <p>
+        3
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof2" />
+        <datalist id="lstprof2">
+          <option>Administrador</option>
+          <option>Marketing</option>
+          <option>Professor</option>
+          <option>Desenvolvedor</option>
+        </datalist>
+      </p>
+      <hr />
+      <p>
+        4 <label for="imsg">Mensagem: </label><br />
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+      </p>
+      <hr />
+      <p>
+        5
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+    <hr />
+
+    <div style="font-size: 1.5em; color: white; background-color: tomato">
+      <marquee behavior="" direction="left">
+        <p>
+          Atenção à quantidade de bytes do formulário. Se for igual ou superior
+          a 3.000 bytes, usar <strong>Method POST</strong> na tag
+          <strong>FORM</strong>. Atenção à quantidade de bytes do formulário. Se
+          for igual ou superior a 3.000 bytes, usar
+          <strong>Method POST</strong> na tag <strong>FORM</strong>.
+        </p>
+      </marquee>
+      <marquee behavior="" direction="right">
+        <p>
+          Atenção à quantidade de bytes do formulário. Se for igual ou superior
+          a 3.000 bytes, usar <strong>Method POST</strong> na tag
+          <strong>FORM</strong>. Atenção à quantidade de bytes do formulário. Se
+          for igual ou superior a 3.000 bytes, usar
+          <strong>Method POST</strong> na tag <strong>FORM</strong>.
+        </p>
+      </marquee>
+    </div>
+  </body>
+</html>
