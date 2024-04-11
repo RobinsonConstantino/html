@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*Estilo para Impressora*/
+
+* {
+  margin: 10px;
+  padding: 10px;
+}
+
+html {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-align: justify;
+}
+
+menu {
+  display: none;
+}
+
+article {
+  width: 100%;
+}
+
+article::after {
+  content: "Esse artigo foi impresso no site https://github.com/RobinsonConstantino";
+}
